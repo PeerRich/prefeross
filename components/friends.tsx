@@ -213,7 +213,12 @@ export default async function Friends() {
                 <div className="mt-4">
                   <a
                     className="underline"
-                    href={`mailto:oss@${friend.href.replace("https://", "")}`}
+                    href={`mailto:oss@${friend.href.replace(
+                      "https://",
+                      ""
+                    )}?subject=Prefer%20OSS%3A%20Let's%20replace&body=Hey%20${
+                      friend.name
+                    }%2C%20saw%20your%20listing%20on%20prefeross.com.%20We%20are%20building%20...%20and%20would%20love%20to%20replace%20...%20for%20you!%20Let%20me%20know%20if%20you%20wanna%20chat!%20`}
                   >
                     Sell to {friend.name}
                   </a>
